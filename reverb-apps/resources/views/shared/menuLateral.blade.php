@@ -3,7 +3,7 @@
     <ul>
     <li><a href="#">String Manipulation</a>
         <ul>
-            <li><a href="#">Contar String</a></li>
+            <li><a href="{{@url('')}}/total-caracteres">Total de Caracteres</a></li>
         <!-- <li><a href="#">Navigation - Level 2</a></li> -->
         </ul>
     </li>

@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/total-caracteres', function () {
+    return view('string-functions/contaString');
+});
+
 Route::get('/contar-string', function () {
     return view('string-functions/contaString');
 });

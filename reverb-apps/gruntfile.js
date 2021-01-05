@@ -27,6 +27,7 @@ module.exports = function(grunt) {
         files: {
           'public/dist/main.min.css': [
             'resources/css/layout.css',
+            'resources/css/custom.css',
           ]
         }
       }
