@@ -13,7 +13,7 @@ File: Layout CSS
 @import url("tables.css");
 
 html{overflow-y:scroll;}
-body{margin:0; padding:0; font-size:12px; font-family:verdana, Arial, Helvetica, sans-serif; color:#FFFFFF; background-color:#333333;}
+body{margin:0; padding:0; color:#FFFFFF; background-color:#333333;}
 
 .justify{text-align:justify;}
 .bold{font-weight:bold;}
@@ -30,8 +30,8 @@ a{outline:none; text-decoration:none;}
 .fl_right, .imgr{float:right;}
 
 img{display:block; margin:0; padding:0; border:0;}
-.imgl, .imgr{border:1px solid #1F262C; padding:5px;}
-.imgl{margin:0 8px 8px 0; clear:left;}
+.imgl, .imgr{ padding:5px;}
+.imgl{margin:0 8px 8px 0; clear:left; width: 100%;}
 .imgr{margin:0 0 8px 8px; clear:right;}
 
 /* ----------------------------------------------Wrapper------------------------------------- */
@@ -154,7 +154,7 @@ div.overview{padding:20px 0 0 0;}
 #footer h2{margin:0 0 15px 0; padding:0 0 8px 0; border-bottom:1px dotted #CCCCCC;}
 #footer .box{display:block; float:right; width:250px; margin:0 0 0 25px; padding:0;}
 #footer .box1{display:block; float:left; width:400px; line-height:1.6em;}
-#footer .box1 .imgl{border:1px solid #CCCCCC; padding:5px; color:#FFFFFF; background-color:#000000;}
+#footer .box1 .imgl{ padding:5px; color:#FFFFFF; background-color:#000000;}
 #footer .contactdetails li{margin:0 0 8px 0;}
 #footer .flickrbox, #footer .flickrbox .wrap{display:block; width:260px;}
 #footer .flickrbox .wrap .fix{clear:both;}

@@ -13,7 +13,7 @@
     <body id="top">
         <div id="header">
             <div id="logo">
-                <h1><a href="../index.html">Reverb</a></h1>
+                <h1><a href="{{@url('')}}">reverb</a></h1>
                 <h2>Developer Online Tools</h2>
             </div>
             <div id="topnav">
@@ -23,7 +23,7 @@
             </div>
             <br class="clear" />
         </div>
-        @include("shared/breadcrumb")
+        <!-- @include("shared/breadcrumb") -->
         <div class="wrapper col4">
             <div id="container">
                 <div id="content">
