@@ -67,6 +67,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
   //tasks
-  grunt.registerTask('publish', ['cssmin', 'concat:core', 'concat:scripts', 'uglify']);
+  grunt.registerTask('publish', ['cssmin', 'concat:scripts', 'uglify']);
 
 };
