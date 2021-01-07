@@ -24,3 +24,7 @@ Route::get('/total-caracteres', function () {
 Route::get('/contar-string', function () {
     return view('string-functions/contaString');
 });
+
+Route::get('/transformar-string', function () {
+    return view('string-functions/transformacaoString');
+});

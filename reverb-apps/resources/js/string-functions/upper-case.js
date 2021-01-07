@@ -1,8 +1,8 @@
-var messageConcatString = 'O texto contém [x] caracteres.';
+var messageConcatString = 'Texto convertido com sucesso. Copie da caixa de texto o resultado.';
 
 $(document).ready(function() {
     $("#btnUpperCaseString").click(function() {
-        contarString();
+        transformar(1);
     });
 
     $('#btnLimparUpperCaseString').click(function() {
@@ -10,18 +10,25 @@ $(document).ready(function() {
     });
 });
 
-var contarString = function() {
+var transformar = function(funcaoId) {
     var txt = $("#result_toUpperCaseString_txt");
 
     esconderMsgErroContat();
     esconderResultadoContat();
-    modificaLabelConcat('');
 
     if (txt.val() == "") {
         exibirMsgErroContat();
     } else {
-        var total = txt.val().length;
-        modificaLabelConcat(messageConcatString.replace('[x]', total));
+        // var total = txt.val().length;
+        var txt = $("#result_toUpperCaseString_txt");
+        var textoAtual = txt.val();
+
+        if (funcaoId == 1) {
+            var upper = textoAtual.toString().toUpperCase();
+            txt.val(upper);
+        }
+
+        modificaLabelConcat(messageConcatString);
         exibirResultadoContat();
     }
 }
@@ -55,7 +62,6 @@ var esconderResultadoContat = function() {
 }
 
 var modificaLabelConcat = function(texto) {
-    var label = $("#result_toUpperCaseString_label");
     label.html(texto);
 }
 
