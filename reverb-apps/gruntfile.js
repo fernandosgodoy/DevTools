@@ -14,6 +14,7 @@ module.exports = function(grunt) {
           'node_modules/jquery/dist/jquery.js',
           'resources/js/jquery.slidepanel.setup.js',
           'resources/js/string-functions/conta-string.js',
+          'resources/js/string-functions/upper-case.js',
         ],
         dest: "temp/scripts-concat.js",
       },
