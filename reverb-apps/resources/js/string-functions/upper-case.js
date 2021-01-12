@@ -5,6 +5,10 @@ $(document).ready(function() {
         transformar(1);
     });
 
+    $("#btnLowerCaseString").click(function(){
+        transformar(2);
+    });
+
     $('#btnLimparUpperCaseString').click(function() {
         limparDadosTelaContarString();
     });
@@ -26,6 +30,9 @@ var transformar = function(funcaoId) {
         if (funcaoId == 1) {
             var upper = textoAtual.toString().toUpperCase();
             txt.val(upper);
+        } else if (funcaoId == 2) {
+            var lower = textoAtual.toString().toLowerCase();
+            txt.val(lower);
         }
 
         modificaLabelConcat(messageConcatString);

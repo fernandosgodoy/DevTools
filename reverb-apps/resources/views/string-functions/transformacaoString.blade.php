@@ -15,7 +15,9 @@
   	<br class="clear" />
       <button id="btnUpperCaseString" type="button"
         class="btn btn-dark">UPPERCASE</button>
-        <button id="btnLimparUpperCaseString" type="button"
+      <button id="btnLowerCaseString" type="button"
+        class="btn btn-dark">lowercase</button>
+      <button id="btnLimparUpperCaseString" type="button"
         class="btn">Limpar Campo</button>
 
 @include("shared/footer")
