@@ -17,6 +17,8 @@
         class="btn btn-dark">UPPERCASE</button>
       <button id="btnLowerCaseString" type="button"
         class="btn btn-dark">lowercase</button>
+      <button id="btnReverseString" type="button"
+        class="btn btn-dark">Reverse</button>
       <button id="btnLimparUpperCaseString" type="button"
         class="btn">Limpar Campo</button>
 

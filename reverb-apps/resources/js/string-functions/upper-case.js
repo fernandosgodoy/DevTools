@@ -9,6 +9,11 @@ $(document).ready(function() {
         transformar(2);
     });
 
+    $("#btnReverseString").click(function(){
+        transformar(3);
+    });
+    
+
     $('#btnLimparUpperCaseString').click(function() {
         limparDadosTelaContarString();
     });
