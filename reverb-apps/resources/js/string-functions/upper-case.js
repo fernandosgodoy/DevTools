@@ -38,6 +38,8 @@ var transformar = function(funcaoId) {
         } else if (funcaoId == 2) {
             var lower = textoAtual.toString().toLowerCase();
             txt.val(lower);
+        } else if (funcaoId == 3) {
+            txt.val(reverseString(textoAtual));
         }
 
         modificaLabelConcat(messageConcatString);
@@ -82,4 +84,12 @@ var limparDadosTelaContarString = function() {
     esconderResultadoContat();
     esconderMsgErroContat();
     txt.val('');
+}
+
+function reverseString(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) { 
+        newString += str[i]; 
+    }
+    return newString;  
 }
