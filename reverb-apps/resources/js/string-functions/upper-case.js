@@ -81,6 +81,7 @@ var esconderResultadoContat = function() {
 }
 
 var modificaLabelConcat = function(texto) {
+    var label = $("#result_toUpperCaseString_label");
     label.html(texto);
 }
 
@@ -102,7 +103,7 @@ function reverseString(str) {
 function titleCase(str) {
     var newString = "";
     var first = true;
-    for (var i = str.length - 1; i >= 0; i--) { 
+    for (var i = 0; i < str.length; i++) { 
         var letra = str[i];
         if (first) {
             letra = letra.toUpperCase();
