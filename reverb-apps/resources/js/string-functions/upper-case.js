@@ -44,7 +44,7 @@ var transformar = function(funcaoId) {
         } else if (funcaoId == 3) {
             txt.val(reverseString(textoAtual));
         } else if (funcaoId == 4) {
-            
+            txt.val(titleCase(textoAtual));   
         }
 
         modificaLabelConcat(messageConcatString);
@@ -99,3 +99,20 @@ function reverseString(str) {
     return newString;  
 }
 
+function titleCase(str) {
+    var newString = "";
+    var first = true;
+    for (var i = str.length - 1; i >= 0; i--) { 
+        var letra = str[i];
+        if (first) {
+            letra = letra.toUpperCase();
+            first = false;
+        }
+
+        if (letra == ' ')
+            first = true;
+
+        newString += letra; 
+    }
+    return newString;  
+}
