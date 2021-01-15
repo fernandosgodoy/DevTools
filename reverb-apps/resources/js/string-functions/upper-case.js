@@ -13,6 +13,9 @@ $(document).ready(function() {
         transformar(3);
     });
     
+    $("#btnTitleCase").click(function(){
+        transformar(4);
+    });
 
     $('#btnLimparUpperCaseString').click(function() {
         limparDadosTelaContarString();
@@ -40,6 +43,8 @@ var transformar = function(funcaoId) {
             txt.val(lower);
         } else if (funcaoId == 3) {
             txt.val(reverseString(textoAtual));
+        } else if (funcaoId == 4) {
+            
         }
 
         modificaLabelConcat(messageConcatString);
@@ -93,3 +98,4 @@ function reverseString(str) {
     }
     return newString;  
 }
+
