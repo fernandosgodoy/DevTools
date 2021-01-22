@@ -25,11 +25,11 @@ $(document).ready(function() {
 var transformar = function(funcaoId) {
     var txt = $("#result_toUpperCaseString_txt");
 
-    esconderMsgErroContat();
+    esconderMsgErroCase();
     esconderResultadoContat();
 
     if (txt.val() == "") {
-        exibirMsgErroContat();
+        exibirMsgErroCase();
     } else {
         // var total = txt.val().length;
         var txt = $("#result_toUpperCaseString_txt");
@@ -52,7 +52,7 @@ var transformar = function(funcaoId) {
     }
 }
 
-var exibirMsgErroContat = function() {
+var exibirMsgErroCase = function() {
     var errorArea = $("#error_toUpperCaseString");
     var ctrl = $("#result_toUpperCaseString_txt");
     errorArea.removeClass("hide");
@@ -60,7 +60,7 @@ var exibirMsgErroContat = function() {
     ctrl.addClass("round-error");
 }
 
-var esconderMsgErroContat = function() {
+var esconderMsgErroCase = function() {
     var errorArea = $("#error_toUpperCaseString");
     var ctrl = $("#result_toUpperCaseString_txt");
     errorArea.removeClass("show");
@@ -88,7 +88,7 @@ var modificaLabelConcat = function(texto) {
 var limparDadosTelaContarString = function() {
     var txt = $("#result_toUpperCaseString_txt");
     esconderResultadoContat();
-    esconderMsgErroContat();
+    esconderMsgErroCase();
     txt.val('');
 }
 

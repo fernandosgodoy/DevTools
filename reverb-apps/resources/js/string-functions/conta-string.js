@@ -17,7 +17,8 @@ var contarString = function() {
     esconderResultadoContat();
     modificaLabelConcat('');
 
-    if (txt.val() == "") {
+    if (txt.val() == '') {
+        console.log('err');
         exibirMsgErroContat();
     } else {
         var total = txt.val().length;
